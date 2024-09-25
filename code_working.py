@@ -16,7 +16,7 @@ while True:
                 timestamp[2],  # the fix time.  Note you might
                 timestamp[3],  # not get all data like year, day,
                 timestamp[4],  # month!
-                timestamp[5],
+                timestamp[5]
             )
         )
     print(
