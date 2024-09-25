@@ -13,7 +13,7 @@ This is a featherwing board that contains a GPS module that uilizes the [adafrui
 We implement this module in the helper file [gps_info.py](https://github.com/zamhoffman/coconut_drifter/blob/main/gps_info.py).
 
 ## [3. RockBLOCK 9603](https://www.adafruit.com/product/4521)
-This board contains a module that connects with the IRIDIUM constellation and utilizes the adafruit_apds9960, adafruit_bus_device, adafruit_register, adafruit_bmp280, adafruit_lis3mdl, adafruit_lsm6ds, adafruit_rockblock, and adafruit_sht31d libraries.
+This board contains a module that connects with the IRIDIUM constellation and utilizes the dafruit_rockblock library.
 We implement this module in the helper file [transmit_data.py]().
 
 # Basic API
