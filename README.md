@@ -14,7 +14,9 @@ We implement this module in the helper file [gps_info.py](https://github.com/zam
 
 ## [3. RockBLOCK 9603](https://www.adafruit.com/product/4521)
 This board contains a module that connects with the IRIDIUM constellation and utilizes the dafruit_rockblock library.
-We implement this module in the helper file [transmit_data.py]().
+We implement this module in the helper file [transmit_data.py](https://github.com/zamhoffman/coconut_drifter/blob/main/transmit_data.py).
+
+****Importantly, we do not utilize the default RX and TX UART pins, as the GPS Featherwing already uses those. The helper file utilizes digital pin 5 and 6 as TX and RX, respecively.**
 
 # Basic API
 
@@ -53,4 +55,11 @@ Where
 |`altitude`     | altitude in meters |
 
 ## Data transmission
-To get GPS measurements, you can uitilize the transmit_data.send_data(..) method:
+To get send data via Iridium, you can uitilize the transmit_data.send_data(..) method:
+```python
+transmit_data.send_data(out_data)
+```
+Where
+| Arg           |  Description    |
+| -----------   | --------------- |
+|`out_data`      | a list of doubles to be transmitted |
