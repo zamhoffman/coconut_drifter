@@ -1,6 +1,6 @@
 # coconut_drifter
 
-This project utilizes Adafruit's [Feather M4](https://www.adafruit.com/product/3857) development board. We utilize adafruit's [CircuitPython](https://circuitpython.org/) platform for implementation, using 8.x.x [version](https://circuitpython.org/board/feather_m4_express/) and its corresponding 8.x [libraries](https://circuitpython.org/libraries).
+This project utilizes Adafruit's [Feather M4](https://www.adafruit.com/product/3857) development board. We utilize adafruit's [CircuitPython](https://circuitpython.org/) platform for implementation, using 8.x.x [version](https://circuitpython.org/board/feather_m4_express/) and its corresponding 8.x [libraries](https://circuitpython.org/libraries). The main executable is code.py.
 
 We use three modules: 
 
