@@ -1,5 +1,6 @@
 import temp_sense
 import gps_info
+import transmit_data
 from time import sleep
 
 print("hello world")
@@ -31,4 +32,8 @@ while True:
         )
     if altitude is not None:
             print("Altitude: {} meters".format(altitude))
+
+    #send data
+    #transmit_data.send_data([timestamp, latitude, longitude, altitude, temp]
     sleep(5)
+
