@@ -22,7 +22,7 @@ We implement this module in the helper file [transmit_data.py]().
 ```python
 import temp_sense
 import gps_info
-import transmit data.py
+import transmit_data.py
 ```
 ## Temperature reading
 To get a temperature reading, you can utilize the temp_sense.get_temp_measurement(..) method:
@@ -32,7 +32,7 @@ temp = temp_sense.get_temp_measurement(REF_val)
 Where
 | Arg           |  Description    |
 | -----------   | --------------- |
-|*REF_val*      | reference resistor value |
+|`REF_val`      | reference resistor value |
 
 So, to read the temperature off of a pt1000 RTD, with a precision resistance of 100 ohms...
 ```python
@@ -40,4 +40,17 @@ temp = temp_sense.get_temp_measurement(100)
 print("temp is: ", temp," degrees C")
 ```
 ## GPS reading
+To get GPS measurements, you can utilize the gps_info.get_curr_info() method:
+```python
+timestamp, latitude, longitude, altitude = gps_info.get_curr_info()
+```
+Where
+| Return value           |  Description    |
+| -----------   | --------------- |
+|`timestamp`     | a list *[month, day, year, hour, minute, seconds]* |
+|`latitude`     | a list *[latitude_degrees, latitude_minutes]* |
+|`longitude`     | a list *[longitude_degrees, longitude_minutes]* |
+|`altitude`     | altitude in meters |
 
+## Data transmission
+To get GPS measurements, you can uitilize the transmit_data.send_data(..) method:
