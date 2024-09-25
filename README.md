@@ -17,6 +17,8 @@ We implement this module in the helper file [gps_info.py](https://github.com/zam
 We implement this module in the helper file [transmit_data.py](https://github.com/zamhoffman/coconut_drifter/blob/main/transmit_data.py).
 
   ****Importantly, we do not utilize the default RX and TX UART pins, as the GPS Featherwing already uses those. The helper file utilizes digital pin 5 and 6 as TX and RX, respecively.**
+<br>
+<br>
 
 # Basic API
 
